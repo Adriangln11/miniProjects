@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1B9AAA;
+}
+#app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+#sectionAdd{
+    width: 600px;
+    height: 600px;
+    background-color: #1B9AAA;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+}
+h1{
+    margin-bottom: 30px;
+    padding: 10px;
+    color: cornsilk;
+    border-bottom: 3px solid darkgray;
+}
+.inputDiv{
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
+#newTask{
+    border: none;
+    border-bottom: 2px solid darkgrey;
+    height: 30px;
+    margin: auto;
+    padding-left: 10px;
+    color: darkgray;
+    font-size: 20px;
+}
+#newTask:focus{
+    outline: none;
+    background-color: cornsilk;
+    border-radius: 8px;
+    border: 2px solid darkgray;
+}
+#buttonAdd{
+    width: 30px;
+    height: 30px;
+    margin: 2px 2px;    
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    background-color: cornsilk;
+    outline: 2px solid darkgray;
+    color: darkgray;
+}
+#buttonAdd:hover{
+    cursor: pointer;
+}
+#sectionShow{
+    width: 500px;
+    min-height: 500px;
+    margin: 20px auto;
+    background-color: cornsilk;
+    border-radius: 8px;
+    border: 2px solid darkgray;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.taskNode{
+    width: 80%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    background-color: cornsilk;
+    border: 2px solid darkgrey;
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.buttonDelete{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    color: cornsilk;
+    background-color: rgb(200, 39, 71);
+}
+.buttonDelete:hover{
+    cursor: pointer;
+}
+.checkbox{
+    color: #1B9AAA;
+    background-color: #1B9AAA;
+}

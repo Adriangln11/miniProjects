@@ -51,6 +51,7 @@ button:hover{
 i{
     color: cornflowerblue;
 }
+
 i:hover{
     cursor: pointer;
     color: cornflowerblue;
