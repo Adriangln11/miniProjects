@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(45deg, #62a9f0, #9b94ff);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgb(138, 185, 246);
+    background-color: cornsilk;
+}
+.dark{
+    background-color: #333;
+    #display{
+        border-color: rgb(48, 48, 48);
+        color: #f8fafb;
+    }
+    #clear{
+        background-color: #4c35aa;
+        color: cornsilk;
+    }
+    .btn-number{
+        background-color: #72c6b2;
+        color: #333;
+        font-weight: bold;
+    }
+    .btn-operator{
+        background-color: rgb(232, 162, 76);
+        color: #333;
+    }
+    #equal{
+        background-color: rgb(210, 55, 55);
+        color: cornsilk;
+    }
+}
+#display{
+    width: 100%;
+    height: 100px;
+    color: #0a1e23;
+    font-size: 50px;
+    text-align: right;
+    padding: 20px;
+    border: solid 5px #c3eaff;
+    border-radius: 8px;
+}
+
+#clear{
+    background-color: #ffd5d8;
+    color: #fc4552;
+}
+.btn-number{
+    background-color: #c3eaff;
+    color: #0a1e23;
+}
+.btn-operator{
+    background-color: #ffd0fb;
+    color: #f967f3;
+}
+#equal{
+    height: 130px;
+    background-color: #adf9e7;
+    color: #000;
+}
+.theme-toggler{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    background-color: #adf9e7;
+    cursor: pointer;
+    z-index: 1;
+}
+.theme-toggler.active {
+    background-color: rgb(210, 55, 55);
+}
+button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    margin: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .2s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
