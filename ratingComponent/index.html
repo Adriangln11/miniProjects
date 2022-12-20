@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="app">
+    <span class="star"><img src="./assets/icon-star.svg" alt="icon.star"></span>
+    <h3 class="tittle">
+      How did we do?
+    </h3>
+    <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div class="btns">
+      <button class="btn" value="1">1</button>
+      <button class="btn" value="2">2</button>
+      <button class="btn" value="3">3</button>
+      <button class="btn" value="4">4</button>
+      <button class="btn" value="5">5</button>
+    </div>
+    <button class="submit" id="submit">Submit</button>
+  </div>
+
+<div class="overlay" id="overlay">
+  <div class="img-overlay"></div>
+  <div class="rating-selected" id="rate">You Selected 4 of 5</div>
+  <h4 class="tittle-overlay"> Thank You!</h4>
+  <p class="text-overlay">
+    We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch! 
+  </p>
+</div>
+
+<div class="advice-container">
+  <div class="advice">
+    <h3 class="tittle-overlay">
+      Please Select an Option
+    </h3>
+    <button class="close-btn submit">Understood</button>
+  </div>
+</div>
+  
+
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <!--You selected  Add rating here  out of 5-->
+
+  <!-- Thank you!
+
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch! -->
+
+<script src="main.js"></script>
+</body>
+</html>

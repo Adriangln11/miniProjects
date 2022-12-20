@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216deg, 12%, 8%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.app {
+  width: 300px;
+  height: 350px;
+  margin: auto;
+  position: relative;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "star" "star" "star" "star" "star" "tittle" "tittle" "tittle" "tittle" "tittle" "p" "p" "p" "p" "p" "p" "p" "p" "p" "p" "btns" "submit" "submit" "submit" "submit" "submit";
+}
+.app .star {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  grid-area: "star";
+  margin: 5px;
+  padding: 10px;
+  background-color: hsla(217deg, 12%, 63%, 0.119);
+  border-radius: 50%;
+}
+.app .star img {
+  width: 15px;
+  height: 15px;
+}
+.app .tittle {
+  font-size: 20px;
+  grid-area: "tittle";
+}
+.app .text {
+  font-size: 12px;
+  color: hsl(217deg, 12%, 63%);
+  grid-area: "p";
+}
+.app .btns {
+  width: 100%;
+  height: 50px;
+  grid-area: "btns";
+  margin: 15px auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.app .btns .btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: hsla(217deg, 12%, 63%, 0.119);
+  border: none;
+  color: hsl(217deg, 12%, 63%);
+}
+.app .btns .btn:hover {
+  cursor: pointer;
+  background-color: hsla(217deg, 12%, 63%, 0.529);
+}
+.app .btns .btn:focus {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.app .submit {
+  grid-area: "submit";
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  border-radius: 20px;
+  color: hsl(0deg, 0%, 100%);
+  transition: transform 0.5s;
+}
+.app .submit:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.overlay {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  padding: 15px;
+  position: absolute;
+  left: -1000px;
+}
+.overlay .img-overlay {
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+  background: url(../assets/illustration-thank-you.svg) no-repeat;
+  background-position: center;
+}
+.overlay .rating-selected {
+  width: 200px;
+  height: 30px;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: hsla(217deg, 12%, 63%, 0.119);
+  color: hsla(25deg, 97%, 53%, 0.642);
+  font-size: 14px;
+}
+.overlay .tittle-overlay {
+  font-size: 25px;
+  text-align: center;
+  margin: 5px 0;
+}
+.overlay .text-overlay {
+  font-size: 15px;
+  color: hsl(217deg, 12%, 63%);
+  padding: 10px;
+  text-align: center;
+}
+
+.show {
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.advice-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: hsla(217deg, 12%, 63%, 0.352);
+  display: none;
+}
+
+.advice {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsla(25deg, 97%, 53%, 0.642);
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.advice .close-btn {
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  border-radius: 20px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  transition: transform 0.5s;
+}
+.advice .close-btn:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=styles.css.map */
