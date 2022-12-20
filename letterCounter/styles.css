@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightsteelblue;
+    background: url(pexels-lumn-167698.jpg) no-repeat;
 }
 #app{
     width: 100%;
@@ -20,31 +20,39 @@ body{
 }
 h1{
     margin: 100px auto;
-    padding: 10px;
+    padding: 20px;
     font-size: 60px;
     color: cornsilk;
-    border-bottom: 3px solid darkgrey;
+    border: 2px solid cornsilk;
+    border-radius: 8px;
+    background-color:rgba(169, 169, 169, 0.209);
 }
 .inputDiv{
     width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color:rgba(169, 169, 169, 0.209);
+    border: 2px solid darkgray;
+    border-radius: 8px;
 }
 #input{
     width: 300px;
     height:40px;
-    margin: auto;
-    padding-left: 10px;
+    margin: 20px auto;
+    padding: 20px;
     border: 2px solid darkgray;
-    color: darkgray;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    background-color:rgba(169, 169, 169, 0.209);
 }
 #input:focus{
     outline: none;
 }
 label{
     margin: 20px auto;
-    font-size: 18px;
-    color: darkgray;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
 }

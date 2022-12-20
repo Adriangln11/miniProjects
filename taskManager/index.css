@@ -2,103 +2,111 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1B9AAA;
+    
+}
+body{
+    background: url(pexels-lumn-167698.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 #app{
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     margin: auto;
-    padding: 10px;
-    justify-content: center;
-    gap: 10px;
+    padding: 50px;
+    align-items: center;
 }
 #sectionAdd{
-    width: 600px;
-    height: 600px;
-    background-color: #1B9AAA;
-    border-radius: 8px;
+    width: 500px;
+    min-height: 300px;
+    margin: 50px 0;
+    background-color: transparent;
     text-align: center;
-    padding: 15px;
 }
 h1{
-    margin-bottom: 30px;
-    padding: 10px;
+    margin: 0 50px;
+    padding: 20px;
+    font-size: 60px;
     color: cornsilk;
-    border-bottom: 3px solid darkgray;
+    border: 2px solid cornsilk;
+    border-radius: 8px;
+    background-color:rgba(169, 169, 169, 0.209);
 }
 .inputDiv{
     width: 60%;
+    height: 50px;
     display: flex;
     margin: auto;
+    justify-content: center;
+    border: 3px solid #333;
+    background-color: cornsilk;
 }
 #newTask{
     border: none;
-    border-bottom: 2px solid darkgrey;
-    height: 30px;
-    margin: auto;
+    height: 100%;
+    width: 85%;
     padding-left: 10px;
-    color: darkgray;
+    border-right: 3px solid #333;
+    color: #333;
     font-size: 20px;
+    background-color: cornsilk;
+
+
 }
 #newTask:focus{
     outline: none;
-    background-color: cornsilk;
-    border-radius: 8px;
-    border: 2px solid darkgray;
 }
 #buttonAdd{
-    width: 30px;
-    height: 30px;
-    margin: 2px 2px;    
-    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    margin: 2px 2px;  
     font-size: 20px;
     font-weight: bolder;
     border: none;
     background-color: cornsilk;
-    outline: 2px solid darkgray;
-    color: darkgray;
+    color: #333;
+    
 }
 #buttonAdd:hover{
     cursor: pointer;
 }
 #sectionShow{
     width: 500px;
-    min-height: 500px;
+    padding-top: 10px;
+    min-height: 300px;
+    max-height: 500px;
     margin: 20px auto;
-    background-color: cornsilk;
-    border-radius: 8px;
-    border: 2px solid darkgray;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
-
 }
 
 .taskNode{
-    width: 80%;
+    width: 60%;
     min-height: 50px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
     gap: 10px;
     background-color: cornsilk;
-    border: 2px solid darkgrey;
-    border-radius: 8px;
+    outline: 3px solid #333;
     margin: 10px auto;
-    padding: 15px;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 .buttonDelete{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 80px;
+    height: 50px;
     font-size: 20px;
     font-weight: bolder;
-    border: none;
+    border: 3px solid rgb(200, 39, 71);
     color: cornsilk;
     background-color: rgb(200, 39, 71);
+    outline: 3px solid #333;
 }
 .buttonDelete:hover{
     cursor: pointer;

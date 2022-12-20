@@ -12,18 +12,24 @@ let idCounter = 0
 
 buttonAdd.addEventListener("click", e => {
     e.preventDefault()
+    if (newTask.value == "") {
+        newTask.value = "Ingresa una tarea valida"
+        setTimeout(() => (
+            newTask.value = ""
+            ), 1000)
+    }else{
     showTask(newTask.value)
-    newTask.value = ""
+    newTask.value = ""}
 })
 
 const showTask = (task) => {
     idCounter++
     tasksContainer.innerHTML += `
         <div class="taskNode" id="${idCounter}" > 
-            <input type="checkbox">
+            
             ${task} 
             
-            <button class="buttonDelete" id="button${idCounter}">-</button>
+            <button class="buttonDelete" id="button${idCounter}">Delete</button>
             
         </div>
     `

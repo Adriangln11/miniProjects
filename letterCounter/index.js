@@ -17,6 +17,7 @@ input.addEventListener("keydown", e => {
         <label for="inputText" id="counter">Letter Count: ${arr.length}</label>
         `
     }
+    
 
 })
 
