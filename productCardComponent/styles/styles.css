@@ -7,8 +7,10 @@
 
 body {
   background-color: silver;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app {
@@ -30,8 +32,9 @@ body {
 
 .product-info {
   width: 90%;
-  height: 300px;
+  height: 350px;
   margin: 0 auto;
+  padding: 10px;
   background-color: hsl(30deg, 38%, 92%);
   border-radius: 0 0 10px 10px;
   box-shadow: 0 10px 50px #333;
@@ -45,12 +48,12 @@ body {
 .product-info .tittle {
   font-family: "Fraunces", serif;
   color: hsl(212deg, 21%, 14%);
-  margin: 15px;
+  margin: 5px 15px;
 }
 .product-info .description {
   font-size: 12px;
   color: hsl(228deg, 12%, 48%);
-  margin: 15px;
+  margin: 5px 15px;
 }
 .product-info .price {
   font-family: "Fraunces", serif;
@@ -70,7 +73,7 @@ body {
 }
 .product-info .btn-container button {
   width: 90%;
-  height: 30px;
+  height: 40px;
   background-color: hsl(158deg, 36%, 37%);
   margin: auto;
   border-radius: 8px;
@@ -88,7 +91,7 @@ body {
 
 @media (min-width: 570px) {
   .app {
-    width: 80%;
+    width: 500px;
     display: flex;
     align-items: center;
   }

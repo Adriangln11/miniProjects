@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../assets/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display";
+}
+
+.app {
+  min-width: 320px;
+  height: 90vh;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app .container {
+  width: 90%;
+  max-width: 450px;
+  height: 90%;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px hsl(223deg, 47%, 23%);
+}
+.app .container .hero {
+  display: block;
+  width: 100%;
+  height: 30%;
+  border-radius: 8px 8px 0 0;
+}
+.app .container .tittle {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 20px auto;
+}
+.app .container .text {
+  padding: 0 30px;
+  text-align: center;
+  color: hsl(224deg, 23%, 55%);
+  font-size: 15px;
+}
+.app .container .plans {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 20px auto;
+}
+.app .container .plans .plan-text-container {
+  font-size: 15px;
+  padding: 5px;
+}
+.app .container .plans a {
+  padding: 10px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.app .container .buttons {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.app .container .buttons .btn {
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+}
+.app .container .buttons .btn:hover {
+  cursor: pointer;
+}
+.app .container .buttons .btn-principal {
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(225deg, 100%, 98%);
+  font-size: 15px;
+  font-weight: bolder;
+}
+.app .container .buttons .btn-secondary {
+  background-color: hsl(225deg, 100%, 98%);
+  color: hsl(224deg, 23%, 55%);
+  font-size: 15px;
+  font-weight: bolder;
+}/*# sourceMappingURL=styles.css.map */

@@ -49,6 +49,9 @@ body {
   background-color: #2978b5;
   border: none;
 }
+.app #buttons .btn:hover {
+  cursor: pointer;
+}
 .app #buttons .btn i {
   width: 40px;
   height: 40px;
