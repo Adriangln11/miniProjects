@@ -5,14 +5,14 @@
     
 }
 body{
-    background: url(pexels-lumn-167698.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    background-color:#2978b5;
+    font-family: "Poppins", sans-serif;
+    overflow-y:scroll;
+    overflow-x: hidden;
 }
 #app{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -30,13 +30,11 @@ h1{
     margin: 0 50px;
     padding: 20px;
     font-size: 60px;
-    color: cornsilk;
-    border: 2px solid cornsilk;
-    border-radius: 8px;
-    background-color:rgba(169, 169, 169, 0.209);
+    color: #2a2f4c;
+    border: 2px solid #2a2f4c;
 }
 .inputDiv{
-    width: 60%;
+    width: 80%;
     height: 50px;
     display: flex;
     margin: auto;
@@ -47,7 +45,7 @@ h1{
 #newTask{
     border: none;
     height: 100%;
-    width: 85%;
+    width: 100%;
     padding-left: 10px;
     border-right: 3px solid #333;
     color: #333;
@@ -85,7 +83,7 @@ h1{
 }
 
 .taskNode{
-    width: 60%;
+    width: 100%;
     min-height: 50px;
     display: flex;
     justify-content: space-between;

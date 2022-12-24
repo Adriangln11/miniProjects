@@ -10,24 +10,29 @@ body{
     justify-content: center;
     align-items: center;
     background-color: lightsteelblue;
+    
 }
 /* rgb(0, 37, 86) */
+
+
 #app{
-   display: flex;
-   flex-direction: column;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 #tittle{
     margin: 100px auto;
-    font-size: 50px;
+    padding: 10px;
+    font-size: 80px;
     font-weight: bold;
-    color: cornsilk;
+    color: #90a0d9;
+    border: 2px solid #90a0d9;
 }
 #btn{
     width: 30%;
     height: 30px;
     margin: auto;
 }
-/* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
@@ -36,14 +41,12 @@ body{
     margin: auto;
   }
   
-  /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-  /* The slider */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -82,7 +85,6 @@ body{
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
@@ -90,3 +92,5 @@ body{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  

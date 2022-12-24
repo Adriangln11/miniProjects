@@ -36,10 +36,8 @@ const showTask = (task) => {
 }
 tasksContainer.addEventListener("click", e => {
     if(e.target.nodeName == "BUTTON"){
-        deleteTask(e.target.parentNode)
+        e.target.parentNode.remove()
     }
 })
 
-const deleteTask = (node) => {
-    node.remove()
-}
+
