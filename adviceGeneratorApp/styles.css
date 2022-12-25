@@ -11,13 +11,16 @@ body{
     align-items: center;
     font-family: 'Manrope', sans-serif;
     background-color: hsl(218, 23%, 16%);
+   
 }
 #app{
-    width: 300px;
+    min-width: 300px;
     min-height: 250px;
     padding: 30px;
+    margin: 20px;
     position: relative;
     display: flex;
+    align-content: center;
     flex-direction: column;
     background-color: hsl(217, 19%, 24%);
     border-radius: 10px;
@@ -34,9 +37,11 @@ body{
     text-align: center;
     margin: 20px 0;
 }
-img{
-    margin: auto 0;
+.separator{
+    margin: auto auto;
+    max-width: 400px;
 }
+
 .btn{
     width: 50px;
     height: 50px;

@@ -1,0 +1,135 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+
+body{
+    background:linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow-x: hidden;
+}
+main{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.app{
+    
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: hsl(240, 5%, 91%);
+    border-radius: 20px;
+    position: relative;
+    text-align: justify;
+
+    .svg-container{
+        width: 200px;
+        height: 100px;
+        background-color: transparent;
+        position: relative;
+        top: -90px;
+        // transform: translateY(50%);
+        left: 50%;
+        transform: translateX(-50%);
+
+        img{
+            display: block;
+            width: fit-content;
+        }
+        
+    }
+    
+    .faq-container{
+        width: 100%;
+        min-height: 350px;
+        padding: 20px;
+        line-height: 1.5rem;
+        .tittle{
+            font-size: 3.5em;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+            color: hsl(238, 29%, 16%);
+        }
+        
+        .faq-question{
+            display: flex;
+            font-size: 1.2em;
+            justify-content: space-between;
+            gap: 2px;
+            margin-top: 20px;
+            color: hsl(238, 29%, 16%);
+            &:hover{
+                cursor: pointer;
+            }
+            
+        }
+        .back-face.faq-answer{
+            font-size: 1.2em;
+            color: hsl(240, 6%, 50%);
+        }
+        .back-face{
+            display: none;
+        }
+       
+    }
+}
+.faq.active .back-face {
+    display: block;
+  }
+
+
+@media (min-width: 720px) {
+    main{
+        height: 100%;
+    }
+    .app{
+        width: 70%;
+        min-height: 400px;
+        flex-direction: row;
+        justify-content: space-between;
+        .svg-container{
+            width: 30%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: static;
+            transform: translateX(0);
+            img{
+                height: 300px;
+            }
+        }
+        .faq-container{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-between;
+            padding: 40px;
+            .tittle{
+                text-align: left;
+                font-size: 4em;
+            }
+            .faq-question{
+                font-size: 2em;
+                justify-content: space-between;
+            }
+            .back-face{
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+

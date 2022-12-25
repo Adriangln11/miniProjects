@@ -7,7 +7,7 @@ body{
     background-image: url("../assets/pattern-background-mobile.svg");
     background-repeat: no-repeat;
     background-position:   center ;
-    background-size: cover;
+    background-size: contain;
     width: 100vw;
     height: 100vh;
     display: flex;

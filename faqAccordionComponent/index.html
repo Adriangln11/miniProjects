@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+
+
+  <main>
+    <div class="app">
+      <div class="svg-container">
+        <img src="./assets/illustration-woman-online-mobile.svg" alt="" aria-hidden="true">
+      </div>
+    
+      <div class="faq-container">
+        <h1 class="tittle">FAQ</h1>
+          <div id="faq1" class="faq">
+            <div class="front-face">
+              <h4 class="faq-question">
+                How many team members can I invite?<span id="btn-1" class="btn"><img src="./assets/icon-arrow-down.svg" alt="" aria-hidden="true"></span>
+              </h4>
+            </div>
+            <div class="back-face back-face1">
+              <p class="faq-answer" id="answer1">
+                You can invite up to 2 additional users on the Free plan. There is no limit on
+                eam members for the Premium plan.
+              </p>
+            </div>
+          </div>
+          <div id="faq2" class="faq">
+            <div class="front-face">
+              <h4 class="faq-question">
+                What is the maximum file upload size?<span id="btn-2" class="btn"><img src="./assets/icon-arrow-down.svg" alt="" aria-hidden="true"></span>
+              </h4>
+            </div>
+            <div class="back-face">
+              <p class="faq-answer" id="answer2">
+                No more than 2GB. All files in your account must fit your allotted storage space.
+              </p>
+            </div>
+          </div>
+          <div id="faq3" class="faq">
+            <div class="front-face">
+              <h4 class="faq-question">
+                How do I reset my password?<span id="btn-3" class="btn"><img src="./assets/icon-arrow-down.svg" alt="" aria-hidden="true"></span>
+              </h4>
+            </div>
+            <div class="back-face">
+              <p class="faq-anserw" id="answer3">
+                Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you.
+              </p>
+            </div>
+          </div>
+          <div id="faq4" class="faq">
+            <div class="front-face">
+              <h4 class="faq-question">
+                Can I cancel my subscription?<span id="btn-4" class="btn"><img src="./assets/icon-arrow-down.svg" alt="" aria-hidden="true"></span>
+              </h4>
+            </div>
+            <div class="back-face">
+              <p class="faq-anserw" id="answer4">
+                Yes! Send us a message and we’ll process your request no questions asked.
+              </p>
+            </div>
+          </div>
+          <div id="faq5" class="faq">
+            <div class="front-face">
+              <h4 class="faq-question">
+                Do you provide additional support?<span id="btn-5" class="btn"><img src="./assets/icon-arrow-down.svg" alt="" aria-hidden="true"></span>
+              </h4>
+            </div>
+            <div class="back-face">
+              <p class="faq-anserw" id="answer5">
+                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  
+  
+  
+
+  
+  <script>
+    const faqs = document.querySelectorAll(".faq")
+    
+    faqs.forEach(faq => {
+    faq.addEventListener("click", function(e) {
+        if (faq.classList.contains("active")) {
+            faq.classList.remove("active")
+        }else{
+            faq.classList.add("active")
+        }
+    })
+})
+  </script>
+  </div>
+</body>
+</html>

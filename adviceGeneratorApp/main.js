@@ -12,7 +12,6 @@ const fetching = (url) => {
         advice = data.slip.advice
         adviceIdElemet.innerText = "Advice  #" + id
         adviceElement.innerText = `\"${advice}\" `
-        console.log(id, advice)
     })}
 
 dice.addEventListener("click", function(e) {
