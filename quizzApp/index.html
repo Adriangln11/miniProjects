@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/styles.css">
     <title>game1</title>
@@ -13,19 +16,35 @@
     
     <div class="app">
 
-        <h2 class="tittle">Quizz Game</h2>
-        <button class="btn" id="btn-start">Start Game</button>
-              
-    </div>
-
-    <div class="question-container">
-        <span class="question-counter">Question: </span>
-        <h3 class="question">This is the question?</h3>
-        <div class="options-container">
-            <button class="option-btn" id="option1"> <span>A</span> option1</button>
-            <button class="option-btn" id="option2"> <span>B</span> option2</button>
-            <button class="option-btn" id="option3"> <span>C</span> option3</button>
+        <div class="container">
+            <div class="header-quizz">
+                <h1 class="tittle">Quizz App</h1>
+                <div class="score-container">
+                    <span class="hits" id="hits">00</span>
+                </div>
+            </div>
+            <div class="body-quizz">
+                 <div class="question" id="question">
+                    What is Js and when was created?
+                 </div>
+                 <div class="options" id="list-options">
+                    <li><span>A</span> Option1</li>
+                    <li><span>B</span> Option2</li>
+                    <li><span>C</span> Option3</li>
+                    <li><span>D</span> Option4</li>
+                 </div>
+            </div>
+            <div class="footer-quizz">
+                <div class="answer" id="answer-div">
+                    <p class="correct-answer" id="correct-answer">T</p>
+                </div>
+                <div class="buttons">
+                    <button id="check-btn" class="btn">Check Answer</button>
+                    <button id="reset-btn" class="btn">Play Again</button>
+                </div>
+            </div>
         </div>
+
     </div>
 
 
