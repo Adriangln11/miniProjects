@@ -14,15 +14,16 @@ body {
 }
 
 main {
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  min-height: 40rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .app {
   width: 320px;
-  height: auto;
+  min-height: 30rem;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -55,7 +56,7 @@ main {
 .app .faq-container .tittle {
   font-size: 3.5em;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
   color: hsl(238deg, 29%, 16%);
 }
@@ -69,6 +70,7 @@ main {
 }
 .app .faq-container .faq-question:hover {
   cursor: pointer;
+  color: hsl(14deg, 88%, 65%);
 }
 .app .faq-container .back-face.faq-answer {
   font-size: 1.2em;
@@ -80,15 +82,17 @@ main {
 
 .faq.active .back-face {
   display: block;
+  color: hsl(240deg, 6%, 50%);
 }
 
 @media (min-width: 720px) {
   main {
-    height: 100%;
+    height: 100vh;
+    height: 100vh;
   }
   .app {
     width: 70%;
-    min-height: 400px;
+    min-height: 35rem;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -110,15 +114,17 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: space-between;
-    padding: 40px;
+    justify-content: space-;
+    padding: 100px 100px 100px 0;
   }
   .app .faq-container .tittle {
     text-align: left;
     font-size: 4em;
+    padding-top: 0.5em;
+    margin: 0;
   }
   .app .faq-container .faq-question {
-    font-size: 2em;
+    font-size: 1.8em;
     justify-content: space-between;
   }
   .app .faq-container .back-face {

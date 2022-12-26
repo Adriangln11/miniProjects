@@ -98,13 +98,14 @@
   
   <script>
     const faqs = document.querySelectorAll(".faq")
-    
+
     faqs.forEach(faq => {
     faq.addEventListener("click", function(e) {
         if (faq.classList.contains("active")) {
             faq.classList.remove("active")
         }else{
             faq.classList.add("active")
+            
         }
     })
 })
