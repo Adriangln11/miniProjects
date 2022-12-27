@@ -8,7 +8,7 @@ const answerDiv = document.querySelector("#answer-div")
 let correctAnswer
 let questionCounter = 0
 let score = 0
-let totalQuestions = 2
+let totalQuestions = 5
 
 function eventListeners(){
     checkBtn.addEventListener("click",checkingAnswer)
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 
 async function fetching() {
-    const ApiUrl = "https://opentdb.com/api.php?amount=10"
+    const ApiUrl = "https://opentdb.com/api.php?amount=10&category=18"
     const result = await fetch(ApiUrl)
     const data = await result.json()
     
@@ -111,7 +111,7 @@ function resetGame(){
     
     checkBtn.style.display = "inline-block"
     listOptionsElement.style.display = "block"
-    renderQuestion()
+    fetching()
 }
         
 
