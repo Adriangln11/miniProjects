@@ -9,6 +9,8 @@ body{
     font-family: "Poppins", sans-serif;
     overflow-y:scroll;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
 }
 #app{
     width: 100vw;
@@ -20,7 +22,7 @@ body{
     align-items: center;
 }
 #sectionAdd{
-    width: 500px;
+    max-width: 100%;
     min-height: 300px;
     margin: 50px 0;
     background-color: transparent;
@@ -29,9 +31,10 @@ body{
 h1{
     margin: 0 50px;
     padding: 20px;
-    font-size: 60px;
+    font-size: 3rem;
     color: #2a2f4c;
     border: 2px solid #2a2f4c;
+    text-align: center;
 }
 .inputDiv{
     width: 80%;
@@ -72,10 +75,9 @@ h1{
     cursor: pointer;
 }
 #sectionShow{
-    width: 500px;
+    max-width: 500px;
     padding-top: 10px;
-    min-height: 300px;
-    max-height: 500px;
+    height: auto;
     margin: 20px auto;
     background-color: transparent;
     display: flex;
@@ -83,8 +85,8 @@ h1{
 }
 
 .taskNode{
-    width: 100%;
-    min-height: 50px;
+    max-width: 100%;
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,7 +100,7 @@ h1{
 
 .buttonDelete{
     width: 80px;
-    height: 50px;
+    height: 60px;
     font-size: 20px;
     font-weight: bolder;
     border: 3px solid rgb(200, 39, 71);
@@ -112,4 +114,8 @@ h1{
 .checkbox{
     color: #1B9AAA;
     background-color: #1B9AAA;
+}
+
+@media (max-width: 590px) {
+    
 }

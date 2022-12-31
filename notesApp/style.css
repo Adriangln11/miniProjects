@@ -89,6 +89,6 @@ textarea{
         gap: 10px;
     }
     .note{
-        max-width: 250px;
+        max-width: 300px;
     }
 }

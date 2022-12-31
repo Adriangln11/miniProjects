@@ -74,13 +74,13 @@ function checkingAnswer () {
             correctAnswerElement.innerText = "Correct!!"
             answerDiv.style.display = "block"
         }else{
-            correctAnswerElement.innerText = "Try Again :("
+            correctAnswerElement.innerText = "Nope, the correct answer is  " + correctAnswer + "  :("
             answerDiv.style.display = "block"
         }
         
         checkCount()
     }else{
-        correctAnswerElement.innerText = "Please Select An Option :( "
+        correctAnswerElement.innerText = "Its better if you select an option ;) "
         answerDiv.style.display = "block"
     }
 }

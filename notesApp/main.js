@@ -20,7 +20,7 @@ function renderNote(e) {
         let newNote = input.value
         notesContainerElement.innerHTML += `
         <div class="note">
-            <p class="note-text"> ${newNote} </p>
+            <p> ${newNote} </p>
             <button class="btn delete-btn" id="delete-btn">Delete</button>
         </div>
         `
