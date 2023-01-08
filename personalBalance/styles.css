@@ -7,17 +7,22 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: #2978b5;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .app{
     width: 90vw;
-    min-height: 90vh;
+    min-height: 80vh;
     background-color: #ffff;
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin-top: 30px;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
 }
 .section-inputs-container{
     width: 100%;
@@ -36,11 +41,12 @@ h3{
     width: 80%;
     color: #2a2f4c;
     border-bottom: 2px solid #2a2f4c;
+    margin-bottom: 15px;
 }
 input{
     max-width: 90%;
     height: 30px;
-    border: 1px solid #2978b5;
+    border: 2px solid #2978b5; 
     padding: 5px;
 }
 input:focus{
@@ -51,7 +57,6 @@ button{
     height: 30px;
     background-color: #2978b5;
     border: none;
-    border-radius: 5px;
     color: #ffff;
     padding: 5px;
     font-size: 0.7rem;
@@ -75,14 +80,26 @@ button:hover{
     font-weight: lighter;
     text-align: center;
 }
-#delete-btn, #edit-btn{
-    font-size: 0.6rem;
-    font-weight: bolder;
-    color: rgb(201, 201, 201);
-    text-decoration: none;
-    color: #2a2f4c;
-    
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+#delete-btn, #edit-btn{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #2978b5;
+    font-size: 1rem;
+    margin-right: 15px;
+    font-weight: bolder;
+}
+#delete-btn{
+    color: red;
+}
+#delete-btn:hover, #edit-btn:hover{
+    cursor: pointer;
 }
 .expense-list{
     width: 95%;
@@ -92,10 +109,12 @@ button:hover{
 }
 .item-container{
     width: 95%;
-    height: 40px;
-    margin-top: 10px;
+    min-height: 40px;
+    margin-top: 15px;
+    padding-left: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
     border-left: 5px solid #2978b5;
 }

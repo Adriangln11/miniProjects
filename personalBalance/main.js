@@ -10,7 +10,6 @@ const totalExpense = document.getElementById("total-expenses")
 const totalBalance = document.getElementById("total-balance")
 
 const expensesContainer = document.getElementById("expenses-container")
-let itemContainers 
 
 let budget = 0
 let balance = 0
@@ -41,15 +40,13 @@ const checkingBalance = () => {
     expensesContainer.innerHTML +=   `
         <div class="item-container">
             <p> ${tittle} </p>
-            <span> $ ${cost} </span>
-            <div>
-                <a href="#" id="edit-btn">Edit</a>
-                <a href="#" id="delete-btn">Delete</a>
+            <span>  ${cost} </span>
+            <div class="btn-container">
+                <i id="edit-btn" class="bi bi-pencil-square"></i>
+                <i id="delete-btn" class="bi bi-trash"></i>
             </div>
         </div>
     `
-    itemContainers = document.querySelectorAll(".item-container")
-    console.log(itemContainers)
     tittleExpense.value = ""
     costExpense.value = ""
     
@@ -58,8 +55,37 @@ const checkingBalance = () => {
     
 }
 
+const deleteExpense = (target) => { 
+    let toDiscount = target.parentNode.previousSibling.previousSibling.innerText
+    expenses = expenses - Number(toDiscount)
+    balance = balance + Number(toDiscount)
+
+    totalBalance.innerText = "$ " + balance
+    totalExpense.innerText = "$ " + expenses
+}
+const editExpense = (target) => { 
+    let costToEdit = Number(target.parentNode.previousSibling.previousSibling.innerText)
+    costExpense.value = costToEdit
+    let tittleToEdit = target.parentNode.previousSibling.previousSibling.previousSibling.previousSibling.innerText
+    tittleExpense.value = tittleToEdit
+
+    expenses -= costToEdit
+    balance += costToEdit
+    totalBalance.innerText = "$ " + balance 
+    totalExpense.innerText = "$ " + expenses
+
+}
+
 setBudgetBtn.addEventListener("click", setBudget)
 checkBtn.addEventListener("click", checkingBalance)
-itemContainers.forEach(item => {
-    item.addEventListener("click", () => console.log(item))
-});
+expensesContainer.addEventListener("click", (e) => {
+    e.preventDefault()
+    if (e.target.id == "delete-btn") {
+        deleteExpense(e.target)
+        e.target.parentNode.parentNode.remove()
+    }
+    if (e.target.id == "edit-btn") {
+        editExpense(e.target)
+        e.target.parentNode.parentNode.remove()
+    }
+})
