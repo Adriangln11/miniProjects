@@ -3,6 +3,8 @@ const input = document.querySelector("#input")
 const counter = document.querySelector("#counter")
 let arr = []
 
+
+
 input.addEventListener("keydown", e => {
     
 
