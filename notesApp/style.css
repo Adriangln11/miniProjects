@@ -38,11 +38,16 @@ h3{
 textarea{
     width: 250px;
     resize: none;
-    border: 2px solid #2978b5;
+    border: none;
+    outline: 2px solid #2978b5;
     padding: 10px;
     margin: 10px 0;
     font-family: "poppins";
     color: #555;
+}
+textarea:focus{
+    outline: 2px solid #2a2f4c;
+    border: none;
 }
 .btn{
     width: 100%;
@@ -65,7 +70,7 @@ textarea{
     color: #555;
     height: auto;
     margin: 20px 0;
-    padding: 10px;
+    padding: 15px;
     background-color: rgba(85, 85, 85, 0.257);
 }
 
