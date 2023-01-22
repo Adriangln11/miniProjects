@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.app{
+  padding: 20px;
+}
+.header-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.unread-container{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  color: hsl(224, 21%, 14%); 
+  font-weight: bold;
+
+}
+.read-counter{
+  width: 30px ;
+  height: 25px;
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  border-radius: 10px;
+}
+.read-marker-container{
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+  color: hsl(219, 12%, 42%);
+}
+.read-marker-container span:hover{
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.img{
+  width:60%;
+}
+.card-img-container{
+  width: 60px;
+  height: 60px;
+}
+.card-text-container{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+  width: 80%;
+  font-size: .8rem;
+}
+.author{
+  color: hsl(224, 21%, 14%);
+  font-weight: bold;
+}
+.author:hover{
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.card-linked-text{
+  color: hsl(219, 85%, 26%);
+  font-weight: 500;
+}
+.card-linked-text:hover{
+  cursor: pointer;
+}
+p{
+  color: hsl(219, 12%, 42%);
+  margin: 0;
+}
+.card-when{
+  color: hsl(219, 14%, 63%);
+}
+.card-message{
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  font-size: .8rem;
+  margin-bottom: 20px;
+}
+.card-linked-img{
+  width: 50%;
+}
+.check{
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+
+}
